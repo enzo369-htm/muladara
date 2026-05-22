@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating — Muladara Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Fredoka:wght@600&family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="navbar-logo" href="/" aria-label="Muladara Studio">
+        <span class="navbar-logo-name">muladara</span>
+        <span class="navbar-logo-tagline">creative studio.</span>
+      </a>
+      <nav class="navbar-menu" aria-label="Principal">
+        <a class="navbar-link" href="/creating.html" aria-current="page">Creating</a>
+        <a class="navbar-link" href="#raiz">Raiz</a>
+        <a class="navbar-link" href="#what-we-do">What we do</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="creating" id="creating" aria-label="Creating">
+        <div class="creating-media creating-media--video">
+          <video
+            src="/videoseccion2.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            aria-label="Proceso creativo — Muladara Studio"
+          ></video>
+        </div>
+        <div class="creating-media creating-media--video">
+          <video
+            src="/physi.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            aria-label="Creating — Muladara Studio"
+          ></video>
+        </div>
+      </section>
+    </main>
+
+    <div class="device-guard" role="dialog" aria-modal="true" aria-labelledby="device-guard-title">
+      <div class="device-guard__card">
+        <div class="device-guard__logo">
+          <span class="navbar-logo-name">muladara</span>
+          <span class="device-guard__tagline">creative studio.</span>
+        </div>
+        <p class="device-guard__label">( pantalla )</p>
+        <h1 class="device-guard__title" id="device-guard-title">Experiencia de escritorio</h1>
+        <p class="device-guard__text">
+          Este sitio está diseñado para pantallas de 13 pulgadas o más. Abrilo desde una
+          computadora para ver la experiencia completa.
+        </p>
+      </div>
+    </div>
+
+    <script type="module" src="/src/creating.js"></script>
+  </body>
+</html>
